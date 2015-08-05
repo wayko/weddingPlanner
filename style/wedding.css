@@ -1,0 +1,17 @@
+nav li{
+	display: inline;
+
+}
+nav li{
+	padding: 0px 5px;
+}
+footer li{
+	display: inline;
+}
+li a{
+	text-decoration: none;
+}
+footer li
+{
+	padding: 0 35px;
+}
