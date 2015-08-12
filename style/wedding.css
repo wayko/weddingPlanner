@@ -1,3 +1,7 @@
+.wrapper{
+	width:960px;
+	margin:0 auto;
+}
 nav li{
 	display: inline;
 
@@ -14,4 +18,94 @@ li a{
 footer li
 {
 	padding: 0 35px;
+}
+#logo
+{
+position:absolute;
+
+left:29.5%;
+ border-radius:50% 50% 50% 50%;
+border:6px solid pink;
+width:230px;
+height:230px;	
+}
+#ringcenter
+{
+position:absolute;
+left:-1px;
+top:-1px;
+ border-radius:50% 50% 50% 50%;
+border:17px solid gold;
+ line-height: 200px;
+width:200px;
+height:200px;	
+}
+#logo img
+{
+position:relative;
+left:4%;
+top:4%;
+ border-radius:50% 50% 50% 50%;
+border:6px solid pink;
+ line-height: 200px;
+width:200px;
+height:200px;	
+}
+.navspace
+{
+position:relative;
+top: 25px;
+font-size:2em;
+}
+.navspace:nth-child(1)
+{
+	position:relative;
+	left: 43%;
+	top: 20px;
+	
+}
+
+.navspace:nth-child(2)
+{
+	position:relative;
+	left:38%;
+	top: 45px;
+}
+.navspace:nth-child(3)
+{
+	position:relative;
+	left:29.5%;
+	top:75px;
+}
+.navspace:nth-child(4)
+{
+	position:relative;
+	left:20.5%;
+	top: 100px;
+}
+.navspace:nth-child(5)
+{
+	position:relative;
+	left:10%;
+	top: 130px;
+}
+.maincontent
+{
+position: relative;
+top: 250px;
+width:100%;
+}
+footer
+{
+position: relative;
+top: 300px;
+}
+.flowers
+{
+
+height:3000px;
+width:20%;
+background-image:url("../images/lilies.jpg");
+
+background-repeat: repeat-y;
 }

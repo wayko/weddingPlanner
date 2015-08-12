@@ -13,25 +13,36 @@
 
 </head>
 <body>
+<section class="pull-left flowers">
+	</section>
+		<section class="pull-right flowers">
+
+
+	</section>
 <div class="wrapper">
 	<nav ng-controller="navController as navItem">
+	<div id="logo"><div id="ringcenter"></div><img src="images/weddinglogo.jpg" /></div>
 		<ul>
-		<li ng-repeat="allNav in navItem.navItems"><a href="{{allNav.url}}">{{allNav.text}}</a></li>
+		<li ng-repeat="allNav in navItem.navItems" class="navspace"><a href="{{allNav.url}}">{{allNav.text}}</a></li>
 		</ul>
 	</nav>
+	
+
 	<section ng-controller="mainController as mainItem">
-		<article ng-repeat="allText in mainItem.contentItems">
+		<article ng-repeat="allText in mainItem.contentItems" class="maincontent">
 		<hr />
-		<h1>{{allText.articleTitle}}</h1>
+		<h1  id="{{allText.idName}}">{{allText.articleTitle}}</h1>
 		<hr />
 		<p ng-bind-html="allText.text | unsafe"></p>
 		</article>
 	</section>
+	
 	<footer ng-controller="footerController as footerItem">
 	<ul>
 	<li ng-repeat="allSocial in footerItem.footerItems"><a href="http://{{allSocial.socialMedia}}/{{allSocial.linkedTo}}">{{allSocial.linkedTo}}</a></li>
 	</footer>
 </div>
+
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
 </body>
 </html>
