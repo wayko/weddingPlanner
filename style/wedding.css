@@ -1,29 +1,28 @@
-.wrapper{
-	width:960px;
-	margin:0 auto;
-}
+@media screen and (min-width:1220px){
 nav li{
 	display: inline;
 
 }
 nav li{
-	padding: 0px 5px;
+	padding: 0 0;
 }
 footer li{
 	display: inline;
 }
-li a{
-	text-decoration: none;
-}
+
 footer li
 {
 	padding: 0 35px;
 }
+nav{
+	position: absolute;
+	left:0em;
+	right: 0em;
+}
 #logo
 {
-position:absolute;
-
-left:29.5%;
+position:relative;
+left:34.286em;
  border-radius:50% 50% 50% 50%;
 border:6px solid pink;
 width:230px;
@@ -42,52 +41,63 @@ height:200px;
 }
 #logo img
 {
-position:relative;
+position:absolute;
 left:4%;
 top:4%;
- border-radius:50% 50% 50% 50%;
+border-radius:50% 50% 50% 50%;
 border:6px solid pink;
  line-height: 200px;
 width:200px;
 height:200px;	
 }
+.wrapper{
+	width:960px;
+	margin:0 auto;
+}
+.navul
+{
+position: absolute;
+left: 22.857em;
+right: 22.857em;
+top: 0em;
+margin: 0 0;
+}
+
 .navspace
 {
-position:relative;
-top: 25px;
 font-size:2em;
 }
 .navspace:nth-child(1)
 {
-	position:relative;
-	left: 43%;
-	top: 20px;
+	position:absolute;
+	left: 13.214em;
+	top: 0.357em;
 	
 }
 
 .navspace:nth-child(2)
 {
-	position:relative;
-	left:38%;
-	top: 45px;
+	position:absolute;
+	left:14.107em;
+	top: 2.143em;
 }
 .navspace:nth-child(3)
 {
-	position:relative;
-	left:29.5%;
-	top:75px;
+	position:absolute;
+	left:14.286em;
+	top:3.929em;
 }
 .navspace:nth-child(4)
 {
-	position:relative;
-	left:20.5%;
-	top: 100px;
+	position:absolute;
+	left:14.107em;
+	top: 5.714em;
 }
 .navspace:nth-child(5)
 {
-	position:relative;
-	left:10%;
-	top: 130px;
+	position:absolute;
+	left:13.036em;
+	top: 7.500em;
 }
 .maincontent
 {
@@ -102,10 +112,24 @@ top: 300px;
 }
 .flowers
 {
-
-
 width:20%;
 background-image:url("../images/lilies.jpg");
-
 background-repeat: repeat-y;
+}
+}
+
+@media screen{
+li a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+}
+
+@media screen and (max-width:1219px){
+.navspace
+{
+font-size:1em;
+}
 }
